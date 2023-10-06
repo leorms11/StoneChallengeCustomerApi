@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\StoneChallengeCustomerApi.Application\StoneChallengeCustomerApi.Application.csproj" />
+      <ProjectReference Include="..\StoneChallengeCustomerApi.Domain\StoneChallengeCustomerApi.Domain.csproj" />
+      <ProjectReference Include="..\StoneChallengeCustomerApi.Infra.CrossCutting.IoC\StoneChallengeCustomerApi.Infra.CrossCutting.IoC.csproj" />
+      <ProjectReference Include="..\StoneChallengeCustomerApi.Infra.CrossCutting.Utils\StoneChallengeCustomerApi.Infra.CrossCutting.Utils.csproj" />
+      <ProjectReference Include="..\StoneChallengeCustomerApi.Infra.Persistence\StoneChallengeCustomerApi.Infra.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
